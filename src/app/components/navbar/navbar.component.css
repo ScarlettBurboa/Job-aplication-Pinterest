@@ -21,19 +21,27 @@ header{
 .partTwo ul{
   float:right;
   vertical-align: middle;
-  line-height: 40px;
+  line-height: 44px;
 }
 .partTwo ul li{
   float: left;
-  padding:8px 12px;
+  padding:3px 14px;
+  position: relative;
+}
+.partTwo ul li:hover{
+  background-color: #efefef;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
 }
 .partTwo ul li a {
   line-height: 24px;
   color: #8e8e8e;
-  font-weight: 600; 
+  font-weight: 700; 
 }
 .partTwo ul li a i{
   font-size: 24px; 
+  line-height: 24px;
 }
 .partTwo ul li a img{
   vertical-align: middle;
@@ -46,6 +54,9 @@ header{
   margin:4px 0;
   position: relative;
   float:left;
+  border-radius: 50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
 }
 .imgProfile{
   border-radius: 50%;
@@ -58,11 +69,19 @@ header{
   margin:4px;
   width:40px;
   height:40px;
-  border-radius: 50%;
-  -webkit-border-radius:50%;
-  -moz-border-radius:50%;
+
 }
-.sub i{
+.logo:hover{
+  background-color: #efefef;
+}
+.logo:focus {
+  border-color:rgba(0, 132, 255, .5);
+  box-shadow: 0 0 0 4px rgba(0, 132, 255, .5);
+}
+.sub a{
+  text-decoration: none;
+}
+.sub a i{
   color: #e60023;
   font-size:28px; 
   margin: auto; 
@@ -77,8 +96,34 @@ color: #333 !important;
 color: #8e8e8e;
 text-decoration:none;
 }
+.grayA i{
+  z-index: 9999;
+}
+.dotRed, .dotBig{
+  width: 6px;
+  height: 6px;
+  background-color: #e60023;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius:50%;
+  float:right;
+  margin-top: 8px;
+  color: #fff;
+}
+.dotBig{
+  width:18px !important;
+  height: 18px !important;
+  margin-top:0px !important;
+  font-size:12px;
+  margin-left: -10px;
+  align-items: center;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+
 .inputSearch{
-  width:90%;
+  width:93%;
   float:right;
 }
 input[type="text"] {
@@ -88,41 +133,32 @@ input[type="text"] {
   margin: 8px 0;
   height: 40px;
   outline: none;
-  padding: 8px;
+  padding: 8px 45px;
   background-color:#efefef;
   box-sizing: border-box;
   transition: 0.3s;
 }
 input[type="text"]:focus {
-  border-color: dodgerBlue;
-  box-shadow: 0 0 4px 0 dodgerBlue;
+  border-color:rgba(0, 132, 255, .5);
+  box-shadow: 0 0 0 4px rgba(0, 132, 255, .5);
 }
 input::placeholder {
- padding-left:30px;
  font-weight: 700;
- color: #aaa;
+ color: #8e8e8e;
  font-size: 16px;
-
 }
 .inputWithIcon i {
   position: absolute;
-  left: 105px;
+  left: 85px;
   margin-top: 20px;
-  color: #aaa;
+  color: #8e8e8e;
   transition: 0.3s;
-}
-.inputWithIcon input[type="text"]:focus + i {
-  color: dodgerBlue;
 }
 .inputWithIcon.inputIconBg i {
   background-color: #aaa;
   color: #fff;
   padding: 9px 4px;
   border-radius: 4px 0 0 4px;
-}
-.inputWithIcon.inputIconBg input[type="text"]:focus + i {
-  color: #fff;
-  background-color: dodgerBlue;
 }
 .container{
   width: 100%;

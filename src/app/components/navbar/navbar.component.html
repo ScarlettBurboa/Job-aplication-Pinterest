@@ -1,27 +1,46 @@
 <header>
   <div class="sectionClass">
-      <div class="partOne">
-        <div class="logo">
-          <div class="sub">
-              <i class="fab fa-pinterest"></i>
-          </div>
-        </div>
-        <div class="inputSearch">
-            <div class="inputWithIcon">
-                <input (keyup)="searchImage($event)" type="text" placeholder="Buscar" value="">
-                <i class="fas fa-search fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
+    <div class="partOne">
+      <div class="logo">
+        <div class="sub">
+          <a href="index.html"><i class="fab fa-pinterest"></i></a>
         </div>
       </div>
-      <div class="partTwo">
-        <ul class="right">
-          <li><a  class="blackA" href="http://">Inicio</a></li>
-          <li><a  class="grayA" href="http://">Siguiendo</a></li>
-          <li><a  class="grayA" href="http://"><img class="imgProfile" src="https://lh3.googleusercontent.com/-lPeh934Xk48/WNLHspuCDmI/AAAAAAAAB70/JLVHccSY2k8ck8e1llGy7e-wwAT3uITtACEwYBhgL/w139-h140-p/IMG_20170320_220157.jpg" alt="" srcset="">Scarlett</a></li>
-          <li><a  class="grayA" href="http://"><i class="fas fa-comment-dots"></i></a></li>
-          <li><a  class="grayA" href="http://"><i class="fas fa-bell"></i></a></li>
-          <li><a  class="grayA" href="http://"><i class="fas fa-ellipsis-h"></i></a></li>
-        </ul>
+      <div class="inputSearch">
+        <div class="inputWithIcon">
+          <input (keyup)="searchImage($event)" type="text" placeholder="Buscar" value="" />
+          <i class="fas fa-search fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
       </div>
+    </div>
+    <div class="partTwo">
+      <ul class="right">
+        <li><a class="blackA" href="http://">Inicio</a></li>
+        <li>
+          <a class="grayA" href="http://">Siguiendo</a>
+          <div class="dotRed"></div>
+        </li>
+        <li>
+          <a class="grayA" href="http://"
+            ><img
+              class="imgProfile"
+              src="https://lh3.googleusercontent.com/-lPeh934Xk48/WNLHspuCDmI/AAAAAAAAB70/JLVHccSY2k8ck8e1llGy7e-wwAT3uITtACEwYBhgL/w139-h140-p/IMG_20170320_220157.jpg"
+              alt=""
+              srcset=""
+            />Scarlett</a
+          >
+        </li>
+        <li>
+          <a class="grayA" href="http://"><i class="fas fa-comment-dots"></i></a>
+        </li>
+        <li>
+          <a class="grayA" href="http://"><i class="fas fa-bell"></i></a>
+          <div class="dotBig">9+</div>
+        </li>
+        <li>
+          <a class="grayA" href="http://"><i class="fas fa-ellipsis-h"></i></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>

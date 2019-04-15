@@ -1,6 +1,16 @@
-<cdk-virtual-scroll-viewport class="container" itemSize="0">
-  <div *cdkVirtualFor="let image of images;" class="col-5 interior">
-    <img [src]="image.largeImageURL" alt="" srcset="">
-    <div class="dots"><button class="buttonDots"> <i class="fas fa-ellipsis-h"></i></button></div>
+<cdk-virtual-scroll-viewport class="animated slideInTop" itemSize="50">
+  <div *cdkVirtualFor="let image of images" class="col-5 interior">
+    <figure class="effect-hover">
+        <img class="imgHover" [src]="image.largeImageURL" alt="" srcset="" />
+        <figcaption>
+          <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+        </figcaption>	
+    </figure>
+    <div class="bottom">
+        <p class="tags">{{image.tags | limitTo : 15}}</p>
+        <div class="dots">
+          <button class="buttonDots"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+    </div>
   </div>
 </cdk-virtual-scroll-viewport>

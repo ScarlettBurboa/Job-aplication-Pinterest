@@ -7,27 +7,43 @@ cdk-virtual-scroll-viewport .col-5:hover{
   background-color: rgba(238, 238, 238, 1);
   border-radius: 4px;
 }
-cdk-virtual-scroll-viewport .col-5 img{
+cdk-virtual-scroll-viewport .col-5 figure img{
   max-width:450px;
   width: 95%;
   height:auto;
-  padding: 10px 2.5%;
+  padding: 7px 2.5% 3px;
   border-radius: 15px;
   -webkit-border-radius:15px;
   -moz-border-radius: 15px;
 }
+.bottom{
+  width: 100%;
+  height: 15px;
+}
+.tags{
+  float:left;
+  width: 60%;
+  margin-left: 5%;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
 .buttonDots{
   height:25px;
   width:25px;
-  margin: 7px 0;
+  margin: 0px 10px 7px 0px;
   float:right;
   color: #8e8e8e;
-  font-size: 12px;
+  font-size: 11px;
   -webkit-border-radius: 50%;
   -moz-border-radius:50%;
   border-radius: 50%;
   background-color: transparent;
   text-align:center;
+  border:none;
+}
+.buttonDots:hover{
+  background-color: #dbdbdb;
 }
 .buttonDots i{
   text-align:center;
@@ -61,6 +77,39 @@ cdk-virtual-scroll-viewport::-webkit-scrollbar {
     transform: translateZ(0);
     will-change: scroll-position;
     -webkit-overflow-scrolling: touch;
+}
+/* Individual effects */
+ figure.effect-hover figcaption::before {
+  position:relative;
+	width: 100%;
+	height: 100%;
+	content: '';
+	opacity: 0;
+}
+
+figure.effect-hover p {
+  margin-top: -100px;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+}
+
+
+figure.effect-hover:hover figcaption::before ,
+figure.effect-hover:hover p {
+  position: relative;
+  top:0;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width:450px;
+  width: 95%;
+  height:100%;
+  padding: 7px 2.5% 3px;
+  border-radius: 15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius: 15px;
+
+
 }
 /* MODAL*/
 /* .modal-window {

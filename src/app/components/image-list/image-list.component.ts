@@ -7,11 +7,15 @@ import { CdkVirtualScrollViewport  } from '@angular/cdk/scrolling';
   templateUrl: './image-list.component.html',
   styleUrls: ['./image-list.component.css']
 })
+
+
 export class ImageListComponent implements OnInit {
   @ViewChild(CdkVirtualScrollViewport)
   viewport: CdkVirtualScrollViewport;
 
   images: any[];
+
+  
 
   constructor(private imageService : PixabayService) { }
 
